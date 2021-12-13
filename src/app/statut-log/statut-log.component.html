@@ -1,0 +1,14 @@
+<main class="container">
+    <div class="ajouterBtn">
+        <a routerLink="" *ngIf="checkLog()">
+            <button mat-flat-button color="accent" (click)="logout()">
+                LogOut
+            </button>
+        </a>
+        <a routerLink="" *ngIf="!checkLog()">
+            <button mat-flat-button color="primary">
+                LogIn
+            </button>
+        </a>
+    </div>
+</main>
